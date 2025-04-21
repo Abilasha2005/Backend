@@ -1,7 +1,9 @@
 const express = require ('express');
+const routes = require('./userRouter');
 const app = express()
 const PORT =5000;
 
+app.use('/api',routes)
 
 app.listen(PORT,async()=>{
     try{
